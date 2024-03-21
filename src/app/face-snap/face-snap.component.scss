@@ -1,0 +1,33 @@
+.app-face-snap{
+  box-shadow: 0.5rem 0.5rem 1.5rem rgb(189, 189, 189), -0.5rem 0.5rem 1rem rgb(190, 190, 190);
+  // width: 400px;
+  padding: 1rem;
+  border-radius: 5px;
+  border-bottom: 5px solid rgb(191, 202, 187);
+  img{
+    width: 318px;
+    height: 200px;
+  }
+  .button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  button{
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background: #0757b3;
+    color: white;
+    font-weight: bolder;
+    width: 10rem;
+
+    &:hover {
+        cursor: pointer;
+      }
+  }
+
+}
+
+.snapped {
+  border-bottom: 5px solid rgb(30, 88, 8);
+}
