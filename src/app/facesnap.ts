@@ -1,4 +1,5 @@
 export interface Facesnap {
+  id: number
   title: string;
   description: string;
   imageUrl: string;

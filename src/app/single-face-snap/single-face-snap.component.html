@@ -2,9 +2,13 @@
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
   <h4>{{faceSnap.title | uppercase}}</h4>
   <p> Mise en ligne le  : {{faceSnap.createdDate | date : 'd MMMM YY à HH:mm'}} </p>
+  <p>{{faceSnap.description}} </p>
+
+  <a [routerLink]="['/facesnaps']" routerLinkActive="router-link-active"  >Retourner</a>
 
   <div class="button-container">
-    <button (click)="showDetails()" >Details </button>
+    <button (click)="onSnap()" >{{buttonSnap}} </button>
+    <p [ngStyle]="{color: 'rgb(0,'+ (faceSnap.snaps*100)/255 +',0)'}" > Snaps : {{faceSnap.snaps}}</p>
   </div>
 
 
